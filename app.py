@@ -259,4 +259,4 @@ with gr.Blocks(css=css) as app_with_history:
 app_with_history.queue(max_size=20,api_open=False )
 
 if __name__ == "__main__":
-    app_with_history.launch(max_threads=400)
+    app_with_history.launch(host="0.0.0.0", port=7860, max_threads=400)
